@@ -412,6 +412,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
   });
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const navLinks = document.querySelectorAll('#nav a'); // todos os links do menu
+        const menu = document.querySelector('.classy-menu');
+        const toggler = document.querySelector('.classy-navbar-toggler');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                if (window.innerWidth < 992) { // só fecha em telas pequenas
+                    menu.classList.remove('menu-on'); // esconde o menu
+                    toggler.classList.remove('active'); // reseta ícone
+                }
+            });
+        });
+    });
+</script>
+
 
 
 </body>
