@@ -35,6 +35,7 @@ Last Update: Feb 9, 2019
 --------------------------------------------- */
 /* Import Fonts & All CSS */
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 @import url(css/bootstrap.min.css);
 @import url(css/animate.css);
 @import url(css/default-assets/classy-nav.css);
@@ -51,7 +52,8 @@ Last Update: Feb 9, 2019
   padding: 0; }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /*font-family: "Poppins", sans-serif;*/
   font-weight: 400;
   font-size: 16px;
   position: relative;
@@ -63,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #2a303b;
   line-height: 1.3;
   font-weight: 500; }
@@ -85,9 +87,10 @@ li {
 
 p {
   line-height: 1.7;
-  color: #636a76;
-  font-size: 16px;
-  font-weight: 400; }
+  color: #1e518f;
+  font-size: 18px;
+  font-weight: 400;
+text-align: justify; }
 
 img {
   max-width: 100%;
@@ -378,6 +381,11 @@ input:focus {
   .section-heading.white h6,
   .section-heading.white h2 {
     color: #ffffff; }
+
+    .section-heading .highlight {
+  color: #1e518f; /* azul escuro elegante */
+}
+
 
 /* :: 5.0 Backtotop Area CSS */
 #scrollUp {
@@ -2567,7 +2575,97 @@ html .ui-button.ui-state-disabled:active {
     }
 }
 
+.hospitaleiro-funciona .section-heading h2 {
+    font-weight: bold;
+}
 
+.hospitaleiro-funciona .section-heading .highlight {
+    color: #1e73be;
+}
 
+.funciona-box {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
+    height: 100%;
+    transition: 0.3s;
+}
 
+.funciona-box:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
 
+.funciona-box h5 {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #1e73be;
+    text-transform: uppercase;
+}
+
+.funciona-box p,
+.funciona-box li {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.funciona-box ul {
+    padding-left: 18px;
+    margin: 0;
+    list-style: disc;
+}
+
+.border-blue {
+    border-color: #1e73be;
+}
+
+.border-green {
+    border-color: #8bc34a;
+}
+.cta-pergunta {
+  font-size: 1.8rem;
+  color: #1e518f;
+}
+
+.cta-box {
+  background-color: #a3cd39;
+  border-radius: 0 30px 30px 0;
+  color: #1e518f;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.azul-destaque {
+  color: #1e73be;
+  font-weight: 600;
+}
+
+.custom-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e518f;
+}
+
+.custom-list li::before {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: linear-gradient(135deg, #1e73be, #a3cd39);
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+}
